@@ -1,0 +1,4 @@
+A branch is a movable pointer to one of the commits you make in Git.
+It is useful in Git as it can record the history you have created while Working
+on a project. Also it provides the user with the opportunity to work on different
+parts of a project stored at different branches. 
