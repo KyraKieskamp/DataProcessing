@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # Name: Kyra Kieskamp
 # Student number: 10099727
+# I got stuck with this exercise on how to correctly extract all the necessary
+# information of the webpage. It took me a long time this week to understand
+# how to use 12-dom from pattern.
 '''
 This script scrapes IMDB and outputs a CSV file with highest ranking tv series.
 '''
@@ -76,8 +79,8 @@ def save_csv(f, tvseries):
     writer = csv.writer(f)
     writer.writerow(['Title', 'Ranking', 'Genre', 'Actors', 'Runtime'])
 
-#    3for e in elements:
-##    title =
+#       for e in elements:
+##       title =
 #        ranking =
 #        genre =
 #        actors =
