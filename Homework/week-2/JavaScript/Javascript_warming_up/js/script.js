@@ -31,7 +31,7 @@ var ApplePie = {
 
 // TODO: add code here
 // obtaining the creator
-var mycreator = document.getElementById("header").getElementsByTagName("p")[0].innerHTML;
+ApplePie.creator = document.getElementById("header").getElementsByTagName("p")[0].innerHTML;
 
 // obtaining the ingredients
 var x = document.getElementById("ingredient-list");
@@ -42,8 +42,7 @@ for (i = 0; i < y.length; i++) {
     ingred[i] = y[i].innerHTML;
 }
 
-// inserting the creator and the ingredients in ApplePie
-ApplePie.creator = mycreator;
+// inserting the ingredients in ApplePie
 ApplePie.ingredients = ingred
 
 
@@ -254,9 +253,10 @@ function createTransform(domain, range){
 	// implement the actual calculation here
 	var beta = range[0];
 	var alpha = (range[1] - range[0]) / (domain[1] - domain[0]);
+    var Dpadding = domain[0];
 
 	return function(x){
-		return alpha * x + beta;
+		return alpha * (x - Dpadding) + beta;
 	};
 }
 
@@ -264,8 +264,8 @@ function createTransform(domain, range){
 var transform = createTransform([10, 20], [10, 20]);
 console.log(transform(15)); //should return 15!!
 
-var transform = createTransform([10, 20], [0, 20]);
-console.log(transform(15)); //should return 15!!
+var transform = createTransform([0, 200], [10, 20]);
+console.log(transform(10)); //should return 15!!
 
 
 // Make sure to test your createTransform function thouroughly
