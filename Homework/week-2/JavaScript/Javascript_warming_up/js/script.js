@@ -1,6 +1,8 @@
 // Javascript warm-up exercises
 // name: Kyra Kieskamp
 // student number: 10099727
+// Discussed the last question with Anneke
+// Obtained information from the website www.w3schools.com 
 
 
 // Pro-tip: just like any other programming exercise, tackle each
