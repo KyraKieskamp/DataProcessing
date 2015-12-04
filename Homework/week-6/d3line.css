@@ -1,0 +1,12 @@
+/*
+ * Not displaying the rawdata
+ */
+ #rawdata
+ {
+     display: none;
+ }
+
+  #max
+ {
+     display: none;
+ }
