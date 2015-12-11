@@ -17,8 +17,9 @@ rows = file.read().split("\n")
 data = []
 for row in rows:
 	row = row.rstrip()
+	row = row.replace("\"", "")
+	row = row.replace("\ufeff", "")
 	col = row.split(",")
-	print col
 	data.append(col)
 
 

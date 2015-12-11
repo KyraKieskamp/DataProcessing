@@ -1,0 +1,15 @@
+ body { font: 12px Arial;}
+ #text { font: 18px Arial;}
+
+#container
+{
+	position: absolute; 
+	width: 800px; 
+	height: 1000px;
+}
+ #visualization
+ {
+ 	position: relative; 
+ 	width: 500px; 
+ 	height: 300px;
+ }

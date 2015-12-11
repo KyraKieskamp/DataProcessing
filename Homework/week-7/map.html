@@ -1,9 +1,8 @@
-<!-- D3: line-graph exercise
+<!-- Dashboard
 Name: Kyra Kieskamp
 stnr: 10099727
 Language: html
-scriptname: d3map.html
-Content: -->
+scriptname: maps.html -->
 
 <!DOCTYPE html>
 
@@ -14,11 +13,22 @@ Content: -->
     <body>
         <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<!--         // <script src="world_data.js"></script> -->
-        <div id="container" style="position: relative; width: 2000px; height: 1000px;"></div>
+        <script src="world_data.js"></script>
+        <div id="text" style="position: relative; left: 500px; width: 800px; height: 10px; font: 18px Arial;"> 
+            <h2>World labor force statistics in 2012</h2>
+        </div>
+        <div id="container" style="position: relative; top: 40px; width: 800px; height: 500px;">
+            <h2>Total labour force in each country in 2012</h2>
+        </div>
+        <div id="text" style="position: absolute; left: 900px; top: 75px; width: 800px; height: 10px; font:12px Arial"> 
+            <h2>Percentages of labor force with a primary, secondary or tertiary education</h2>
+        </div>
+        <svg id="visualisation" width="1000" height="500" style ="position:absolute; top: 120px; left: 900px; height:300px; ">
+        </svg>
+
         <script src="map.js"></script>
-        <div id="source" style="position: relative; width: 600px; height: 10000px;">
-            <p>Population densities of the countries obtained from http://databank.worldbank.org/data/reports.aspx?source=2&Topic=4#</p>
+        <div id="source" style="position: absolute; top: 650px; width: 600px; height: 10000px;">
+            <p>Population densities of the countries obtained from http://databank.worldbank.org/data/reports.aspx?source=2 Topic=4#</p>
         </div>
     </body>
 </html>
